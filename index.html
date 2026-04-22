@@ -64,10 +64,11 @@
   /* CARD */
   .card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(61,43,31,0.08); transition: transform .25s, box-shadow .25s; position: relative; }
   .card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(61,43,31,0.14); }
-  .card-badge { position: absolute; top: 12px; left: 12px; z-index: 2; padding: 4px 12px; border-radius: 20px; font-size: 0.72rem; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; }
+  .card-meta { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+  .card-badge { padding: 4px 12px; border-radius: 20px; font-size: 0.72rem; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; }
   .badge-available { background: var(--moss); color: white; }
   .badge-reserved { background: var(--red); color: white; }
-  .card-sex { position: absolute; top: 12px; right: 12px; z-index: 2; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1rem; background: rgba(255,255,255,0.9); box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+  .card-sex { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; background: var(--sand); }
 
   /* SLIDER */
   .slider-wrap { position: relative; width: 100%; aspect-ratio: 4/3; background: var(--sand); overflow: hidden; }
@@ -116,8 +117,7 @@
 <header class="hero">
   <span class="hero-paw">🐾</span>
   <h1>Cachorros <em>Border Collie</em></h1>
-  <p>Nacidos con amor en Argentina. Buscamos la familia perfecta para cada uno.<br>
-  <span style="display:inline-block;margin-top:8px;background:rgba(90,122,82,0.35);color:#b8e0b0;font-size:0.82rem;padding:4px 14px;border-radius:20px;letter-spacing:.04em;">🏆 Se entregan con pedigree</span></p>
+  <p>Nacidos con amor en Argentina. Buscamos la familia perfecta para cada uno.</p>
 </header>
 
 <nav class="nav-bar">
@@ -146,7 +146,7 @@
 
 <main>
   <div class="section-title" id="section-label">Todos los cachorros</div>
-  <p class="section-sub">Hacé clic en WhatsApp para consultar por el cachorro que te guste 💚 &nbsp;·&nbsp; <strong style="color:var(--moss)">🏆 Se entregan con pedigree</strong></p>
+  <p class="section-sub">Hacé clic en WhatsApp para consultar por el cachorro que te guste 💚</p>
   <div class="followup-box">
     <p>📸 <strong>Seguimiento día a día:</strong> esta página se actualiza con fotos nuevas de cada cachorro hasta el momento de la entrega. También podés pedir fotos y videos en cualquier momento por WhatsApp — te mantenemos al tanto de cómo crece tu futuro compañero. 🐾</p>
   </div>
@@ -285,10 +285,12 @@ function createCard(p) {
   const wpMsg = encodeURIComponent(`Hola! Vi el sitio y me interesa el cachorro ${p.name || (p.sex==='male'?'macho':'hembra')} 🐾`);
 
   div.innerHTML = `
-    <div class="card-badge ${isAvailable?'badge-available':'badge-reserved'}">${isAvailable?'Disponible':'Reservado'}</div>
-    <div class="card-sex">${sexIcon}</div>
     <div class="slider-wrap" id="slider-${p.id}">${slidesHTML}${arrowsHTML}</div>
     <div class="card-body">
+      <div class="card-meta">
+        <div class="card-badge ${isAvailable?'badge-available':'badge-reserved'}">${isAvailable?'Disponible':'Reservado'}</div>
+        <div class="card-sex">${sexIcon}</div>
+      </div>
       ${nameHTML}
       <p class="card-desc">${p.desc||''}</p>
       ${birthHTML}
