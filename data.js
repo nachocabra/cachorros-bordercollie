@@ -59,8 +59,8 @@ const CACHORROS = [
   {
     id: '4',
     name: 'Chapi',
-    sex: 'male',
-    desc: 'Curioso e inteligente, aprende rapidísimo.',
+    sex: 'female',
+    desc: 'Curiosa e inteligente, aprende rapidísimo.',
     status: 'available',
     birth: '2025-03-15',
     photos: [
@@ -70,8 +70,8 @@ const CACHORROS = [
   {
     id: '5',
     name: 'Cachivache',
-    sex: 'male',
-    desc: 'El travieso de la camada, nunca para quieto.',
+    sex: 'female',
+    desc: 'La traviesa de la camada, nunca para quieto.',
     status: 'available',
     birth: '2025-03-15',
     photos: [
@@ -119,7 +119,7 @@ const CACHORROS = [
     name: 'Roma',
     sex: 'female',
     desc: 'Vivaz y expresiva, siempre lista para jugar.',
-    status: 'available',
+    status: 'reserved',
     birth: '2025-03-15',
     photos: [
       { src: 'fotos/cachorros/roma.jpeg', label: 'Foto 1' },
