@@ -8,19 +8,16 @@ const WP_NUMBER = '543489312273';
 const MADRE = {
   name: 'Kimberly',
   desc: 'Border Collie pura raza, Kimberly es todo lo que podés esperar de la mejor madre: tranquila, equilibrada y con un cariño infinito. Criada con amor, transmite su dulzura y buen carácter a cada uno de sus cachorros.',
-  // Agregá las fotos en la carpeta fotos/madre/ y ponelas acá
   photos: [
-    // 'fotos/madre/foto1.jpg',
-    // 'fotos/madre/foto2.jpg',
+    'fotos/madre/madre1.jpeg',
+    'fotos/madre/madre2.jpeg',
   ]
 };
 
 const PADRE = {
   name: '',
   desc: 'Border Collie pura raza.',
-  // Agregá la foto en fotos/padre/ y ponela acá
-  photo: null,
-  // photo: 'fotos/padre/foto1.jpg',
+  photo: 'fotos/padre/padre.jpeg',
 };
 
 const CACHORROS = [
@@ -111,7 +108,7 @@ const CACHORROS = [
     name: 'Marta',
     sex: 'female',
     desc: 'Afectuosa y sociable, le encanta el contacto humano.',
-    status: 'available',
+    status: 'reserved',
     birth: '2025-03-15',
     photos: [
       { src: 'fotos/cachorros/marta.jpeg', label: 'Foto 1' },
