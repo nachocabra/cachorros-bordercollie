@@ -96,12 +96,6 @@
   .wp-btn svg { width: 18px; height: 18px; fill: white; flex-shrink: 0; }
   .wp-btn.disabled { background: #ccc; cursor: not-allowed; pointer-events: none; }
 
-  /* PADRE */
-  .padre-section { background: var(--sand); padding: 32px 16px; }
-  .padre-inner { max-width: 1100px; margin: 0 auto; display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
-  .padre-photo { flex-shrink: 0; width: 140px; height: 140px; border-radius: 14px; overflow: hidden; background: var(--cream); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; box-shadow: 0 4px 16px rgba(61,43,31,0.1); }
-  .padre-photo img { width: 100%; height: 100%; object-fit: cover; }
-
   /* EMPTY */
   .empty-state { text-align: center; padding: 60px 20px; color: var(--gray); grid-column: 1 / -1; }
   .empty-state span { font-size: 3rem; display: block; margin-bottom: 12px; }
@@ -153,17 +147,6 @@
   <div class="grid" id="puppy-grid"></div>
 </main>
 
-<section class="padre-section">
-  <div class="padre-inner">
-    <div class="padre-photo" id="padre-photo-wrap"><span>🐕</span></div>
-    <div>
-      <span style="font-size:0.72rem;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--gray);">♂ El papá</span>
-      <h3 id="padre-name-text" style="font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--bark);margin:4px 0 6px;"></h3>
-      <p id="padre-desc-text" style="font-size:0.85rem;color:#666;line-height:1.6;"></p>
-    </div>
-  </div>
-</section>
-
 <footer>Sitio hecho con ❤️ para encontrar el mejor hogar a cada cachorro. &nbsp;·&nbsp; 🇦🇷 Argentina</footer>
 
 <script>
@@ -214,16 +197,6 @@ function applyMadreSlide(idx) {
   document.querySelectorAll('.madre-slide').forEach((s, i) => s.classList.toggle('active', i === idx));
   const dots = document.getElementById('madre-dots');
   if (dots) dots.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === idx));
-}
-
-// ─── RENDER PADRE ────────────────────────────────────────────────
-function renderPadre() {
-  document.getElementById('padre-name-text').textContent = PADRE.name || 'El padre';
-  document.getElementById('padre-desc-text').textContent = PADRE.desc || '';
-  const wrap = document.getElementById('padre-photo-wrap');
-  if (PADRE.photo) {
-    wrap.innerHTML = `<img src="${PADRE.photo}" alt="Padre">`;
-  }
 }
 
 // ─── RENDER GRID ─────────────────────────────────────────────────
@@ -328,7 +301,6 @@ function filterPuppies(f, btn) {
 
 // ─── INIT ────────────────────────────────────────────────────────
 renderMadre();
-renderPadre();
 renderGrid();
 </script>
 </body>

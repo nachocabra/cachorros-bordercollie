@@ -14,12 +14,6 @@ const MADRE = {
   ]
 };
 
-const PADRE = {
-  name: '',
-  desc: 'Border Collie pura raza.',
-  photo: 'fotos/padre/padre.jpeg',
-};
-
 const CACHORROS = [
   {
     id: '1',
