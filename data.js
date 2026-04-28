@@ -20,7 +20,7 @@ const CACHORROS = [
     name: 'Tony',
     sex: 'male',
     desc: 'El más grande de la manada. Imponente y carismático.',
-    status: 'available',
+    status: 'reserved',
     birth: '2025-03-15',
     photos: [
       { src: 'fotos/cachorros/tony1.jpeg', label: 'Foto 1' },
