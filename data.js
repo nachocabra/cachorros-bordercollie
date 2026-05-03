@@ -52,10 +52,10 @@ const CACHORROS = [
   },
   {
     id: '4',
-    name: 'Chapi',
+    name: 'Tanya',
     sex: 'female',
     desc: 'Curiosa e inteligente, aprende rapidísimo.',
-    status: 'available',
+    status: 'reserved',
     birth: '2025-03-15',
     photos: [
       { src: 'fotos/cachorros/chapi.jpeg', label: 'Foto 1' },
