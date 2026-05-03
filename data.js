@@ -32,7 +32,7 @@ const CACHORROS = [
     name: 'Tommy',
     sex: 'male',
     desc: 'Juguetón y lleno de energía, siempre el primero en explorar.',
-    status: 'available',
+    status: 'reserved',
     birth: '2025-03-15',
     photos: [
       { src: 'fotos/cachorros/tommy1.jpeg', label: 'Foto 1' },
