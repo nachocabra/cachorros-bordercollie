@@ -88,9 +88,9 @@ const CACHORROS = [
   },
   {
     id: '7',
-    name: 'Kyra',
-    sex: 'female',
-    desc: 'Elegante y serena, la más femenina de la camada.',
+    name: 'Kyro',
+    sex: 'male',
+    desc: 'Elegante y sereno, uno de los más llamativos de la camada.',
     status: 'available',
     birth: '2025-03-15',
     photos: [
