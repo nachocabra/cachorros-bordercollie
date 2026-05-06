@@ -121,10 +121,10 @@ const CACHORROS = [
   },
   {
     id: '10',
-    name: 'Solcito',
+    name: 'Madison',
     sex: 'female',
     desc: 'Alegre y cálida, ilumina cualquier espacio con su presencia.',
-    status: 'available',
+    status: 'reserved',
     birth: '2025-03-15',
     photos: [
       { src: 'fotos/cachorros/solcito.jpeg', label: 'Foto 1' },
