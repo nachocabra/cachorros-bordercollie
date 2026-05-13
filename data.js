@@ -66,7 +66,7 @@ const CACHORROS = [
     name: 'Cachivache',
     sex: 'female',
     desc: 'La traviesa de la camada, nunca para quieto.',
-    status: 'available',
+    status: 'reserved',
     birth: '2025-03-15',
     photos: [
       { src: 'fotos/cachorros/cachivache1.jpeg', label: 'Foto 1' },
@@ -78,7 +78,7 @@ const CACHORROS = [
     name: 'Sirenita',
     sex: 'female',
     desc: 'Dulce y curiosa, con una mirada que te roba el corazón.',
-    status: 'available',
+    status: 'reserved',
     birth: '2025-03-15',
     photos: [
       { src: 'fotos/cachorros/sirenita1.jpeg', label: 'Foto 1' },
@@ -91,7 +91,7 @@ const CACHORROS = [
     name: 'Kyro',
     sex: 'male',
     desc: 'Elegante y sereno, uno de los más llamativos de la camada.',
-    status: 'available',
+    status: 'reserved',
     birth: '2025-03-15',
     photos: [
       { src: 'fotos/cachorros/kyra.jpeg', label: 'Foto 1' },
@@ -121,10 +121,10 @@ const CACHORROS = [
   },
   {
     id: '10',
-    name: 'Madison',
+    name: 'Solcito',
     sex: 'female',
     desc: 'Alegre y cálida, ilumina cualquier espacio con su presencia.',
-    status: 'reserved',
+    status: 'available',
     birth: '2025-03-15',
     photos: [
       { src: 'fotos/cachorros/solcito.jpeg', label: 'Foto 1' },
